@@ -11,6 +11,7 @@ namespace EpiserverSite1.Controllers
 {
     public class StandardPageController : PageController<StandardPage>
     {
+
         public ActionResult Index(StandardPage currentPage)
         {
             /* Implementation of action. You can create your own view model class that you pass to the view or

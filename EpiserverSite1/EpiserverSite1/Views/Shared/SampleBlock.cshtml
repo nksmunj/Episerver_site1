@@ -1,0 +1,11 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+
+@model EpiserverSite1.Models.Blocks.SampleBlock
+
+<div>
+    <h2>@Html.PropertyFor(m => m.Heading)</h2>
+    
+    <img src="@Url.ContentUrl(Model.Image)"/>
+    
+</div>

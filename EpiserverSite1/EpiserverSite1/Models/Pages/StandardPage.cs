@@ -16,7 +16,7 @@ namespace EpiserverSite1.Models.Pages
             Name = "Heading",
             Description = "The Page Heading",
             GroupName = SystemTabNames.Content,
-            Order = 1)]
+            Order = 0)]
         public virtual String Heading { get; set; }
 
         [CultureSpecific]
@@ -26,6 +26,14 @@ namespace EpiserverSite1.Models.Pages
             GroupName = SystemTabNames.Content,
             Order = 1)]
         public virtual XhtmlString MainBody { get; set; }
+
+        [CultureSpecific]
+        [Display(
+            Name = "Content Area",
+            Description = "Content Area",
+            GroupName = SystemTabNames.Content,
+            Order = 1)]
+        public virtual ContentArea ContentArea { get; set; }
 
     }
 }
