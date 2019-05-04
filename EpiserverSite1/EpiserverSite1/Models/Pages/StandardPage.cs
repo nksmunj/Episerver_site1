@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using EpiserverSite1.Models.Blocks;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
@@ -27,6 +28,8 @@ namespace EpiserverSite1.Models.Pages
             Order = 1)]
         public virtual XhtmlString MainBody { get; set; }
 
+        public virtual SampleBlock DefaultBlock { get; set; }
+
         [CultureSpecific]
         [Display(
             Name = "Content Area",
@@ -34,6 +37,9 @@ namespace EpiserverSite1.Models.Pages
             GroupName = SystemTabNames.Content,
             Order = 1)]
         public virtual ContentArea ContentArea { get; set; }
+
+
+
 
     }
 }

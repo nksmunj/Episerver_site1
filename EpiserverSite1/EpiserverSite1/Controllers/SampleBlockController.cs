@@ -8,6 +8,7 @@ using EPiServer.Core;
 using EPiServer.Web;
 using EPiServer.Web.Mvc;
 using EpiserverSite1.Models.Blocks;
+using EPiServer.ServiceLocation;
 
 namespace EpiserverSite1.Controllers
 {

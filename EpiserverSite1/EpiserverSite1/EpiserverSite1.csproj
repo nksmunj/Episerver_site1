@@ -217,6 +217,8 @@
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ItemGroup>
+    <Compile Include="Business\Review.cs" />
+    <Compile Include="Controllers\DynamicDataController.cs" />
     <Compile Include="Controllers\SampleBlockController.cs" />
     <Compile Include="Controllers\StandardPageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -230,9 +232,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Business\" />
     <Folder Include="Models\Properties\" />
     <Folder Include="Static\" />
+    <Folder Include="Views\DynamicData\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
