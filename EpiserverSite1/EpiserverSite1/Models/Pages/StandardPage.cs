@@ -10,9 +10,7 @@ namespace EpiserverSite1.Models.Pages
 {
     [ContentType(DisplayName = "StandardPage", GUID = "eda7e835-8fd5-40be-ba0c-827d1fcc2ad1", Description = "")]
     public class StandardPage : PageData
-    {
-
-
+    {    
         [CultureSpecific]
         [Display(
             Name = "Heading",
